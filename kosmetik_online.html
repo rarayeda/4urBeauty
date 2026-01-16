@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kosmetik Online</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
+    body { margin: 0; background: #fff5f8; }
+    header {
+      background: #e91e63;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { margin: 0; font-size: 22px; }
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                  url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h2 { font-size: 36px; margin-bottom: 10px; }
+    .hero p { font-size: 18px; }
+
+    .container { padding: 40px; }
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #e91e63;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .card h3 { margin: 10px 0 5px; }
+    .price { color: #e91e63; font-weight: bold; }
+    .card button {
+      margin-top: 10px;
+      padding: 10px;
+      border: none;
+      background: #e91e63;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .card button:hover { background: #c2185b; }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Kosmetik Online</h1>
+  <nav>
+    <a href="#">Beranda</a>
+    <a href="#">Produk</a>
+    <a href="#">Keranjang</a>
+    <a href="#">Login</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Tampil Cantik Setiap Hari</h2>
+  <p>Temukan produk kosmetik terbaik dengan harga terjangkau</p>
+</section>
+
+<div class="container">
+  <h2 class="section-title">Produk Terbaru</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://cf.shopee.sg/file/id-11134201-23020-biw1sd4ijynva8" alt="Moisturizer">
+      <h3>Moisturizer</h3>
+      <p class="price">Rp 50.000</p>
+      <button onclick="alert('Produk ditambahkan ke keranjang')">Masukkan Keranjang</button>
+    </div>
+    <div class="card">
+      <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98o-lktd5xl4nhit30" alt="Face Wash">
+      <h3>Face Wash</h3>
+      <p class="price">Rp 100.000</p>
+      <button onclick="alert('Produk ditambahkan ke keranjang')">Masukkan Keranjang</button>
+    </div>
+    <div class="card">
+      <img src="https://lh6.googleusercontent.com/J8yaNMBAFwUnl3fxw0_8zVbtkcoxcTVZf3Is9pWExirfu-2-dyfmvJNuG-2M7k3N7VTSHmWGd6vlp40Xm7WfpKchXrKtdSEcaM_NvcH6FeYn2p8MvWdxeVkjxZbBls_iWN11ZwzfKMC2TmtwcGwkvuM" alt="Maskara">
+      <h3>Maskara</h3>
+      <p class="price">Rp 90.000</p>
+      <button onclick="alert('Produk ditambahkan ke keranjang')">Masukkan Keranjang</button>
+    </div>
+    <div class="card">
+      <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98t-luq9k958pkzuce" alt="Bedak">
+      <h3>Bedak</h3>
+      <p class="price">Rp 120.000</p>
+      <button onclick="alert('Produk ditambahkan ke keranjang')">Masukkan Keranjang</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 Kosmetik Online | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+
